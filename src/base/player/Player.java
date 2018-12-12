@@ -35,9 +35,10 @@ public class Player extends GameObject implements Physics {
         super();
 //        this.createRenderer();
 //        this.renderer= new SingleImageRenderer(SpriteUtils.loadImage("assets/images/players/straight/0.png"));
-        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
+//        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
+        this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
-        this.hp = 9;
+        this.hp = 3;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.position, 32, 48);
@@ -45,7 +46,6 @@ public class Player extends GameObject implements Physics {
     }
 
     private void createRenderer() {
-        //ArrayList<BufferedImage> images
         ArrayList<BufferedImage> images = new ArrayList<>();
         images.add(SpriteUtils.loadImage("assets/images/players/straight/0.png"));
         images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
@@ -54,7 +54,7 @@ public class Player extends GameObject implements Physics {
         images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
         images.add(SpriteUtils.loadImage("assets/images/players/straight/5.png"));
         images.add(SpriteUtils.loadImage("assets/images/players/straight/6.png"));
-//        this.renderer = new AnimationRenderer(images);
+        this.renderer = new RotateRenderer(images, 10);
     }
 
     public void takeDamage(int damage) {
@@ -75,7 +75,9 @@ public class Player extends GameObject implements Physics {
         super.destroy();
         EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
         explosion.position.set(this.position);
-        SceneManager.signNewScene(new GameOverScene());
+        if (this.hp == 0) {
+            SceneManager.signNewScene(new GameOverScene());
+        }
     }
 
     @Override

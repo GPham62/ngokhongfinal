@@ -21,10 +21,9 @@ public class EnemyBullet extends GameObject implements Physics {
         this.boxCollider = new BoxCollider(this.position
                 , 16, 16);
 //-----
-//        this.renderer = new BoxRenderer(this.boxCollider
-//                , Color.green, true);
-        this.renderer = new EnemyRotateRenderer(SpriteUtils.loadImage("assets/images/enemies/bullets/missile.png"));
-        this.damage = 3;
+        this.renderer = new BoxRenderer(this.boxCollider
+                , Color.green, true);
+        this.damage = 1;
         this.speed = 10;
     }
 

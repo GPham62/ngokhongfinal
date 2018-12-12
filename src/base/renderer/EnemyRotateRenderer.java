@@ -5,12 +5,13 @@ import base.player.Player;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class EnemyRotateRenderer extends RotateRenderer {
-
-    public EnemyRotateRenderer(BufferedImage image) {
-        super(image);
+    public EnemyRotateRenderer(ArrayList<BufferedImage> images, int frameCounterMax) {
+        super(images, frameCounterMax);
     }
+
 
     @Override
     public void syncTransform(GameObject master) {
