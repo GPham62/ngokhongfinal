@@ -6,9 +6,6 @@ import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.player.Player;
 import base.renderer.BoxRenderer;
-import base.renderer.EnemyRotateRenderer;
-import base.renderer.RotateRenderer;
-import tklibs.SpriteUtils;
 
 import java.awt.*;
 
