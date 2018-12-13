@@ -12,12 +12,6 @@ public class GameObject {
     //static
     public static ArrayList<GameObject> gameObjects = new ArrayList<>();
 
-    public static Player createPlayer() {
-        Player player = new Player();
-        gameObjects.add(player);
-        return player;
-    }
-
     //createGameObject generic
     public static <E extends GameObject> E create(Class<E> clazz) {
         try {
@@ -89,6 +83,7 @@ public class GameObject {
         this.isActive = true;
         this.velocity = new Vector2D();
         this.anchor = new Vector2D(0.5f, 0.5f);
+        this.speed = 0;
         //...
     }
 

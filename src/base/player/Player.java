@@ -2,6 +2,7 @@ package base.player;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.Score;
 import base.Vector2D;
 import base.action.Action;
 import base.enemy.EnemyExplosion;
@@ -10,10 +11,7 @@ import base.events.MouseEventMotion;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
-import base.renderer.AnimationRenderer;
-import base.renderer.Renderer;
-import base.renderer.RotateRenderer;
-import base.renderer.SingleImageRenderer;
+import base.renderer.*;
 import base.scene.GameOverScene;
 import base.scene.SceneManager;
 import tklibs.SpriteUtils;
@@ -38,7 +36,7 @@ public class Player extends GameObject implements Physics {
 //        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
-        this.hp = 3;
+        this.hp = 999;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.position, 32, 48);
@@ -58,16 +56,17 @@ public class Player extends GameObject implements Physics {
     }
 
     public void takeDamage(int damage) {
-        if(this.immune)
-            return;
+//        if(this.immune)
+//            return;
         this.hp -= damage;
         if(this.hp <= 0) {
             this.hp = 0;
             this.destroy();
-        } else {
-            this.immune = true;
-            this.immuneCouter.reset();
         }
+//        else {
+//            this.immune = true;
+//            this.immuneCouter.reset();
+//        }
     }
 
     @Override

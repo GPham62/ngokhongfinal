@@ -50,7 +50,7 @@ public class EnemySummoner extends GameObject {
     }
 
     private Action createAction() {
-        Action wait = new ActionWait(100);
+        Action wait = new ActionWait(20);
         Action summon = new ActionSummonEnemy();
         Action sequence = new ActionSequence(summon,wait);
         Action repeat = new ActionRepeat(sequence);
