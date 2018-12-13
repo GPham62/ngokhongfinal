@@ -15,21 +15,35 @@ public class Score extends GameObject {
         this.value = 0;
         this.position.set( Settings.SCREEN_WIDTH - 350, 30);
         this.renderer = new TextRenderer("SCORE: " + value);
-        this.increaseCounter = new FrameCounter(20);
+        this.increaseCounter = new FrameCounter(30);
     }
 
     @Override
     public void run() {
-        if (this.increaseCounter.run()) {
+        Player player = null;
+        for (GameObject gameObject : gameObjects) {
+            if (gameObject instanceof Player)
+                player = (Player) gameObject;
+            break;
+        }
+        if (player != null)
+        if (player.isActive && this.increaseCounter.run()) {
         this.value++;
         this.increaseCounter.reset();
         }
         for (GameObject gameObject : gameObjects) {
             if (gameObject.isActive && gameObject instanceof EnemyExplosion) {
-                this.value += 10;
+                this.value += 5;
+                break;
             }
         }
         this.renderer = new TextRenderer("SCORE: " + value);
         super.run();
+    }
+
+    @Override
+    public void reset() {
+        this.value = 0;
+        super.reset();
     }
 }
