@@ -1,6 +1,7 @@
 package base;
 
 import base.enemy.EnemyExplosion;
+import base.enemy.EnemyHomingBullet;
 import base.game.Settings;
 import base.player.Player;
 import base.renderer.SingleImageRenderer;
@@ -8,28 +9,39 @@ import base.renderer.TextRenderer;
 import tklibs.SpriteUtils;
 
 public class Score extends GameObject {
-    public int value;
-    Player player;
+    int value;
     FrameCounter increaseCounter;
+    boolean isGameOver;
     public Score(){
         super();
         this.value = 0;
         this.position.set( Settings.SCREEN_WIDTH - 350, 30);
         this.renderer = new TextRenderer("SCORE: " + value);
+        this.increaseCounter = new FrameCounter(10000/60);
         this.increaseCounter = new FrameCounter(30);
+        this.isGameOver = false;
     }
 
     @Override
     public void run() {
-
-        if (this.increaseCounter.run()) {
-        this.value++;
-        this.increaseCounter.reset();
-        }
-        for (GameObject gameObject : gameObjects) {
-            if (gameObject.isActive && gameObject instanceof EnemyExplosion) {
-                this.value += 5;
+        Player player = GameObject.recycle(Player.class);
+        player.isActive = false;
+        for (GameObject gameObject : gameObjects){
+            if (gameObject.isActive && gameObject instanceof Player){
+                player = (Player)gameObject;
                 break;
+            }
+        }
+        this.isGameOver = false;
+        if (!this.isGameOver) {
+            if (player.isActive && this.increaseCounter.run()) {
+                this.value += 1;
+                this.increaseCounter.reset();
+            }
+
+            if (player.isActive && EnemyHomingBullet.hitEachOther) {
+                this.value += 10;
+                EnemyHomingBullet.hitEachOther = false;
             }
         }
         this.renderer = new TextRenderer("SCORE: " + value);
@@ -40,5 +52,6 @@ public class Score extends GameObject {
     public void reset() {
         this.value = 0;
         super.reset();
+        this.isGameOver = true;
     }
 }

@@ -8,10 +8,13 @@ import base.physics.Physics;
 import base.player.Player;
 
 public class EnemyHomingBullet extends EnemyBullet implements Physics {
-    FrameCounter smokeCounter;
+    public static boolean hitEachOther;
 
     public EnemyHomingBullet(){
         super();
+        this.hitEachOther = false;
+
+
     }
     private void hitEachOther() {
         EnemyHomingBullet enemyHomingBullet = null;
@@ -20,6 +23,7 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
             if (gameObject instanceof EnemyHomingBullet && gameObject != this &&gameObject.isActive
                     && ((EnemyHomingBullet) gameObject).getBoxCollider().intersects(this.boxCollider)){
                 enemyHomingBullet = (EnemyHomingBullet) gameObject;
+                this.hitEachOther = true;
                 break;
             }
         }
@@ -53,7 +57,7 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
             if(toMouse.length() > 10) {
                 velocity2.set(toMouse).setLength(speed - 1); //bullet's speed
             }
-          this.velocity.set(result).substractThis(velocity2);
+            this.velocity.set(result).substractThis(velocity2);
         }
     }
 
