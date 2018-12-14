@@ -27,7 +27,6 @@ public class GameCanvas extends JPanel {
     }
 
     public void runAll() {
-//        for(GameObject gameObject : GameObject.gameObjects) {
         for(int i = 0; i < GameObject.gameObjects.size(); i++) {
             GameObject gameObject = GameObject.gameObjects.get(i);
             if(gameObject.isActive) {
@@ -38,8 +37,6 @@ public class GameCanvas extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
-//        for(GameObject gameObject : GameObject.gameObjects) {
-//        Graphics2D g2d = (Graphics2D) g;
         g.fillRect(0, 0, (int)Settings.SCREEN_WIDTH, (int)Settings.SCREEN_HEIGHT);
         for(int i = 0; i < GameObject.gameObjects.size(); i++) {
             GameObject gameObject = GameObject.gameObjects.get(i);

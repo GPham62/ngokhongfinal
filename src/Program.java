@@ -16,7 +16,7 @@ public class Program {
         canvas.setPreferredSize(new Dimension((int)Settings.SCREEN_WIDTH, (int)Settings.SCREEN_HEIGHT));
         window.add(canvas);
         window.pack();
-        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
         window.setVisible(true);
         canvas.gameLoop();
     }
