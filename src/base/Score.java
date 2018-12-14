@@ -8,7 +8,7 @@ import base.renderer.TextRenderer;
 import tklibs.SpriteUtils;
 
 public class Score extends GameObject {
-    int value;
+    public int value;
     Player player;
     FrameCounter increaseCounter;
     public Score(){

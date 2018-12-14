@@ -12,8 +12,6 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
 
     public EnemyHomingBullet(){
         super();
-        this.smokeCounter = new FrameCounter(5);
-
     }
     private void hitEachOther() {
         EnemyHomingBullet enemyHomingBullet = null;
@@ -56,13 +54,6 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
                 velocity2.set(toMouse).setLength(speed - 1); //bullet's speed
             }
           this.velocity.set(result).substractThis(velocity2);
-
-//            Smoke smoke = GameObject.recycle(Smoke.class);
-//            if(smokeCounter.run()) {
-//                smoke.position.set(this.position);
-//                smokeCounter.reset();
-//                smoke.destroy();
-//            }
         }
     }
 
