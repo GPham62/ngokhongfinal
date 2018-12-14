@@ -9,6 +9,7 @@ import tklibs.SpriteUtils;
 
 public class Score extends GameObject {
     int value;
+    Player player;
     FrameCounter increaseCounter;
     public Score(){
         super();
@@ -20,14 +21,8 @@ public class Score extends GameObject {
 
     @Override
     public void run() {
-        Player player = null;
-        for (GameObject gameObject : gameObjects) {
-            if (gameObject instanceof Player)
-                player = (Player) gameObject;
-            break;
-        }
-        if (player != null)
-        if (player.isActive && this.increaseCounter.run()) {
+
+        if (this.increaseCounter.run()) {
         this.value++;
         this.increaseCounter.reset();
         }
