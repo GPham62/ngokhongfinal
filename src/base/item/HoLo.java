@@ -20,8 +20,8 @@ public class HoLo extends Item {
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-        images.add(SpriteUtils.loadImage("assets/images/items/holo.png"));
-        images.add(SpriteUtils.loadImage("assets/images/items/holo2.png"));
+        images.add(SpriteUtils.loadImage("assets/images/items/holo - Copy.png"));
+        images.add(SpriteUtils.loadImage("assets/images/items/holo2 - Copy.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
