@@ -83,7 +83,7 @@ public class GameObject {
         this.isActive = true;
         this.velocity = new Vector2D();
         this.anchor = new Vector2D(0.5f, 0.5f);
-        this.speed = 0;
+        this.speed = 10;
         //...
     }
 

@@ -45,13 +45,13 @@ public class Player extends GameObject implements Physics {
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/0.png"));
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/5.png"));
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/6.png"));
+        images.add(SpriteUtils.loadImage("assets/images/players/straight/w0.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/5.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/6.png"));
         this.renderer = new RotateRenderer(images, 10);
     }
 
