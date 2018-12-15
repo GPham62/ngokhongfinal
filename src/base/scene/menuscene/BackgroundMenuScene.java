@@ -10,7 +10,6 @@ import base.scene.SceneStage1;
 public class BackgroundMenuScene extends GameObject {
     public BackgroundMenuScene() {
         this.renderer = new SingleImageRenderer("assets/images/background/menuBackground.png");
-
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
     }
 
