@@ -12,7 +12,7 @@ public class HoLo extends Item {
 
     public HoLo() {
         super();
-        this.boxCollider = new BoxCollider(this.anchor,this.position, 18, 20);
+        this.boxCollider = new BoxCollider(this.anchor,this.position, 45, 45);
         this.position.set(300, 300);
 //        this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/items/holo.png"));
         this.createRenderer();
