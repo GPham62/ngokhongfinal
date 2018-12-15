@@ -1,6 +1,8 @@
 package base.enemy;
 
 import base.GameObject;
+import base.Vector2D;
+import base.events.MouseEventMotion;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
@@ -55,13 +57,14 @@ public class EnemyBullet extends GameObject implements Physics {
 //    }
 
     private void hitPlayer() {
+        Vector2D toMouse = MouseEventMotion.getVectorFromCentorToMouse();
         Player player = GameObject.intersects(Player.class, this.boxCollider);
         if(player != null) {
             player.takeDamage(this.damage);
             EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
             explosion.position.set(this.position);
             this.destroy();
-            this.velocity.set(0,0);
+            explosion.velocity.set(toMouse.scaleThis(-1).setLength(10));
         }
     }
 

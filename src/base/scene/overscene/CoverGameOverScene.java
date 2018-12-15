@@ -1,5 +1,6 @@
-package base;
+package base.scene.overscene;
 
+import base.GameObject;
 import base.events.KeyEventPress;
 import base.game.Settings;
 import base.renderer.SingleImageRenderer;
@@ -8,7 +9,7 @@ import base.scene.SceneStage1;
 
 public class CoverGameOverScene extends GameObject {
     public CoverGameOverScene() {
-        this.renderer = new SingleImageRenderer("assets/images/background/gameOver.png");
+        this.renderer = new SingleImageRenderer("assets/images/background/gameOverScene.png");
         this.position.set((int)Settings.SCREEN_WIDTH/2, (int)Settings.SCREEN_HEIGHT/2);
     }
 

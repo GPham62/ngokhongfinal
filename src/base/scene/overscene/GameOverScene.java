@@ -1,15 +1,12 @@
-package base.scene;
+package base.scene.overscene;
 
-import base.CoverGameOverScene;
 import base.GameObject;
-import base.Score;
+import base.scene.Scene;
 
 public class GameOverScene extends Scene {
     @Override
     public void init() {
         GameObject cover = GameObject.recycle(CoverGameOverScene.class);
-        Score score = GameObject.recycle(Score.class);
-        score.run();
     }
 
     @Override

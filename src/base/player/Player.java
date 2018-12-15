@@ -10,7 +10,7 @@ import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.renderer.*;
-import base.scene.GameOverScene;
+import base.scene.overscene.GameOverScene;
 import base.scene.SceneManager;
 import tklibs.SpriteUtils;
 
@@ -33,7 +33,7 @@ public class Player extends GameObject implements Physics {
 //        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
-        this.hp = 3000;
+        this.hp = 999;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.anchor,this.position, 60, 80);
@@ -88,7 +88,6 @@ public class Player extends GameObject implements Physics {
 
     @Override
     public void run() {
-        this.move(); //change velocity
         super.run(); //this.position.addThis(this.velocity)
         this.createSmoke();
     }
@@ -101,24 +100,6 @@ public class Player extends GameObject implements Physics {
             smokeEffect.position.set(this.position).addThis(toMouse);
             this.smokeCounter.reset();
         }
-    }
-
-
-    private void move() {
-//        int vx = 0;
-//        int vy = 0;
-//        if(KeyEventPress.isUpPress) {
-//            angle -= 5;
-//        }
-//        if(KeyEventPress.isDownPress) {
-//            angle += 5;
-//        }
-//        if(KeyEventPress.isLeftPress) {
-//            vx -= 5;
-//        }
-//        if(KeyEventPress.isRightPress) {
-//            vx += 5;
-//        }
     }
 
     @Override
