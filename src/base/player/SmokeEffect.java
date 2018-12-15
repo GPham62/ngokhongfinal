@@ -33,7 +33,7 @@ public class SmokeEffect extends GameObject {
 
         this.velocity.set(velocity2);
     }
-
+//xcvcv
     private void smaller() {
         SmokeRenderer smokeRenderer =(SmokeRenderer)this.renderer;
         if (this.frameCounter.run()){
