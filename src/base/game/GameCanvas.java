@@ -10,6 +10,7 @@ import java.awt.*;
 public class GameCanvas extends JPanel {
 
     public GameCanvas() {
+        System.out.println(">>");
         SceneManager.signNewScene(new MenuScene());
     }
 
