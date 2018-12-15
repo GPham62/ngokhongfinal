@@ -1,14 +1,16 @@
-package base;
+package base.scene.menuscene;
 
+import base.GameObject;
 import base.events.KeyEventPress;
 import base.game.Settings;
 import base.renderer.SingleImageRenderer;
 import base.scene.SceneManager;
 import base.scene.SceneStage1;
 
-public class CoverMenuScene extends GameObject {
-    public CoverMenuScene() {
-        this.renderer = new SingleImageRenderer("assets/images/background/menuScene.png");
+public class BackgroundMenuScene extends GameObject {
+    public BackgroundMenuScene() {
+        this.renderer = new SingleImageRenderer("assets/images/background/menuBackground.png");
+
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
     }
 

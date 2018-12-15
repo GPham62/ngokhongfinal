@@ -1,7 +1,7 @@
 package base.game;
 
 import base.GameObject;
-import base.scene.MenuScene;
+import base.scene.menuscene.MenuScene;
 import base.scene.SceneManager;
 
 import javax.swing.*;
