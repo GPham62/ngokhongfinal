@@ -9,7 +9,8 @@ public class Settings {
     public static int SCREEN_HEIGHT = (int) screenSize.getHeight();
 //    public static int SCREEN_WIDTH = 800;
 //    public static int SCREEN_HEIGHT = 600;
-
+//    public static int TEXT_MENU_WIDTH = 606;
+//    public static int TEXT_MENU_HEIGHT = 116;
     public static int BACKGROUND_WIDTH = 1600;
     public static int BACKGROUND_HEIGHT = 900;
     public static int UP_BUTTON = KeyEvent.VK_W;
