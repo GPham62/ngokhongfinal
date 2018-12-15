@@ -4,6 +4,7 @@ import base.Score;
 import base.background.Background;
 import base.GameObject;
 import base.enemysummoner.EnemySummoner;
+import base.item.ItemGuide;
 import base.item.ItemSummoner;
 import base.item.Peach;
 import base.physics.BoxCollider;
@@ -16,6 +17,7 @@ public class SceneStage1 extends Scene {
     public Score score;
 //    public Peach peach;
     public ItemSummoner itemSummoner;
+    public ItemGuide itemGuide;
 
     @Override
     public void init() {
@@ -24,6 +26,7 @@ public class SceneStage1 extends Scene {
         this.enemySummoner = GameObject.recycle(EnemySummoner.class);
         this.score = GameObject.recycle(Score.class);
         this.itemSummoner = GameObject.recycle(ItemSummoner.class);
+        this.itemGuide = GameObject.recycle(ItemGuide.class);
     }
 
     @Override
