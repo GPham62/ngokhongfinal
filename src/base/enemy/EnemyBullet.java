@@ -6,8 +6,12 @@ import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.player.Player;
 import base.renderer.BoxRenderer;
+import base.renderer.RotateRenderer;
+import tklibs.SpriteUtils;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -18,12 +22,24 @@ public class EnemyBullet extends GameObject implements Physics {
         this.boxCollider = new BoxCollider(this.anchor,this.position
                 , 16, 16);
 //-----
-        this.renderer = new BoxRenderer(this.boxCollider
-                , Color.green, true);
+        this.createRenderer();
+//        this.renderer = new BoxRenderer(this.boxCollider
+//                , Color.green, true);
         this.damage = 1;
         this.speed = 10;
     }
 
+    private void createRenderer() {
+        ArrayList<BufferedImage> images = new ArrayList<>();
+        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/hand-red.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/5.png"));
+//        images.add(SpriteUtils.loadImage("assets/images/players/straight/6.png"));
+        this.renderer = new RotateRenderer(images, 10);
+    }
 //    private void move(){
 //        Vector2D toMouse = MouseEventMotion.getVectorFromCentorToMouse();
 //        Vector2D velocity = new Vector2D();

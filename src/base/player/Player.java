@@ -34,14 +34,14 @@ public class Player extends GameObject implements Physics {
         this.hp = 999;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
-        this.boxCollider = new BoxCollider(this.anchor,this.position, 32, 48);
+        this.boxCollider = new BoxCollider(this.anchor,this.position, 60, 80);
         this.angle = 0;
         this.smokeCounter = new FrameCounter(10);
     }
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/w0.png"));
+        images.add(SpriteUtils.loadImage("assets/images/players/straight/c0.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
