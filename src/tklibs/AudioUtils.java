@@ -35,6 +35,19 @@ public class AudioUtils {
 //        new javafx.embed.swing.JFXPanel();
     }
 
+//    public static void main(String[] args) {
+//        Clip sound = loadSound("assets/music/sfx/enemy-explosion.wav");
+//        long lastTime = 0;
+//        while(true) {
+//            long currentTime = System.currentTimeMillis();
+//            if(currentTime - lastTime > 500) {
+//                sound.setFramePosition(0);
+//                sound.start();
+//                lastTime = currentTime;
+//            }
+//        }
+//    }
+
     /**
      * For playing background music, must calll intialize first: mp3
      * @param audioUrl

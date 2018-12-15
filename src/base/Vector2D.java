@@ -102,7 +102,7 @@ public class Vector2D {
 
     public double angle() {
         double angle = -Math.atan(this.x / this.y);
-        return this.y > 0 ? angle + Math.PI   : angle;
+        return this.y > 0 ? angle + Math.PI : angle;
     }
 
     public double angleTo(Vector2D other) {
