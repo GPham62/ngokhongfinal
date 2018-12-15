@@ -75,7 +75,7 @@ public class GameObject {
     public boolean isActive;
     public Vector2D velocity;
     public Vector2D anchor;
-    public int speed;
+    public static int speed;
 
     //phuong thuc
     public GameObject() {

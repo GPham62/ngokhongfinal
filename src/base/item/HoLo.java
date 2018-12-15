@@ -1,32 +1,27 @@
 package base.item;
 
-import base.GameObject;
-import base.Score;
-import base.Vector2D;
-import base.events.MouseEventMotion;
 import base.physics.BoxCollider;
 import base.renderer.AnimationRenderer;
-import base.renderer.RotateRenderer;
 import base.renderer.SingleImageRenderer;
 import tklibs.SpriteUtils;
 
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-public class Peach extends Item {
+public class HoLo extends Item {
 
-    public Peach() {
+    public HoLo() {
         super();
         this.boxCollider = new BoxCollider(this.anchor,this.position, 18, 20);
-        this.position.set(200, 300);
-        this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/items/Peach.png"));
-//        this.createRenderer();
+        this.position.set(300, 300);
+//        this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/items/holo.png"));
+        this.createRenderer();
     }
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
         images.add(SpriteUtils.loadImage("assets/images/items/holo.png"));
-        images.add(SpriteUtils.loadImage("assets/images/items/holo2 .png"));
+        images.add(SpriteUtils.loadImage("assets/images/items/holo2.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
 //        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
