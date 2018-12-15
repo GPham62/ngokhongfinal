@@ -9,6 +9,7 @@ public class MenuScene extends Scene {
         BackgroundMenuScene backgroundMenuScene = GameObject.recycle(BackgroundMenuScene.class);
         TextMenuScene textMenuScene = GameObject.recycle(TextMenuScene.class);
         CoverMenuScene cover = GameObject.recycle(CoverMenuScene.class);
+//        StartButton startButton = GameObject.recycle(StartButton.class);
     }
 
     @Override

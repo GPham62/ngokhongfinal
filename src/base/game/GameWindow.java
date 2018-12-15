@@ -14,8 +14,9 @@ public class GameWindow extends JFrame {
     public GameWindow() {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 //        this.setSize(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
-        this.setTitle("Wukong!");
+        this.setTitle("Wukong");
         this.setResizable(false);
+//        this.addMouseInput();
         this.addKeyEvent();
         this.addMouseEvent();
     }
@@ -31,6 +32,20 @@ public class GameWindow extends JFrame {
             }
         });
     }
+
+//    private void addMouseInput(){
+//        this.addMouseListener(new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                KeyEventPress.isClicked = true;
+//            }
+//
+//            @Override
+//            public void mouseReleased(MouseEvent e) {
+//                KeyEventPress.isClicked = false;
+//            }
+//        });
+//    }
 
     private void addKeyEvent() {
         this.addKeyListener(new KeyAdapter() {
