@@ -17,8 +17,8 @@ public class Background extends GameObject implements Physics {
     BackgroundPart part4;
     BoxCollider boxCollider;
 
-    int width = 1300;
-    int height = 1300;
+    int width = 2000;
+    int height = 1125;
     int speed;
 
     public Background() {

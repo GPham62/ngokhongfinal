@@ -10,7 +10,7 @@ public class BackgroundPart extends GameObject {
     public BackgroundPart() {
         super();
         BufferedImage image = SpriteUtils.loadImage(
-                "assets/images/background/background-cloudy.png"
+                "assets/images/background/2000x1125.png"
         );
         this.renderer = new SingleImageRenderer(image);
         this.anchor.set(0, 0);

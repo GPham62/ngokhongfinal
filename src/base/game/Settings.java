@@ -4,11 +4,11 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Settings {
-//    public static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-//    public static int SCREEN_WIDTH = (int)screenSize.getWidth();
-//    public static int SCREEN_HEIGHT = (int) screenSize.getHeight();
-    public static int SCREEN_WIDTH = 800;
-    public static int SCREEN_HEIGHT = 600;
+    public static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    public static int SCREEN_WIDTH = (int)screenSize.getWidth();
+    public static int SCREEN_HEIGHT = (int) screenSize.getHeight();
+//    public static int SCREEN_WIDTH = 800;
+//    public static int SCREEN_HEIGHT = 600;
 
     public static int BACKGROUND_WIDTH = 1600;
     public static int BACKGROUND_HEIGHT = 900;
