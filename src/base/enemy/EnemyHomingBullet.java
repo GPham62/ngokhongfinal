@@ -6,8 +6,6 @@ import base.Vector2D;
 import base.events.MouseEventMotion;
 import base.physics.Physics;
 import base.player.Player;
-import base.renderer.SingleImageRenderer;
-import tklibs.SpriteUtils;
 
 public class EnemyHomingBullet extends EnemyBullet implements Physics {
     public static boolean hitEachOther;
@@ -15,7 +13,7 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
     public EnemyHomingBullet(){
         super();
         this.hitEachOther = false;
-        this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/enemies/bullets/hand-red.png"));
+
 
     }
     private void hitEachOther() {

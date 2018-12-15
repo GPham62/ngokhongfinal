@@ -21,7 +21,7 @@ public class EnemyBullet extends GameObject implements Physics {
         this.renderer = new BoxRenderer(this.boxCollider
                 , Color.green, true);
         this.damage = 1;
-        //this.speed = 10;
+        this.speed = 10;
     }
 
 //    private void move(){
