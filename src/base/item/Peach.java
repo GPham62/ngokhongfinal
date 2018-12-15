@@ -19,9 +19,7 @@ public class Peach extends Item {
     Random rd;
     public Peach() {
         super();
-
         randomPosition();
-
         this.boxCollider = new BoxCollider(this.anchor, this.position, 45, 45);
         this.speed = 10;
         this.position.set(randomX, randomY);

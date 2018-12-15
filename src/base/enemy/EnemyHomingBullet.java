@@ -17,6 +17,7 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
 
     }
     private void hitEachOther() {
+        Vector2D toMouse = MouseEventMotion.getVectorFromCentorToMouse();
         EnemyHomingBullet enemyHomingBullet = null;
         for (GameObject gameObject : GameObject.gameObjects) {
 
@@ -29,10 +30,10 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
         }
         if (enemyHomingBullet != null) {
             EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
-            explosion.position.set(this.position);
             enemyHomingBullet.destroy();
             this.destroy();
-            this.velocity.set(0,0);
+            explosion.position.set(enemyHomingBullet.position);
+            explosion.velocity.set(toMouse.scaleThis(-1).setLength(10));
         }
     }
 
