@@ -6,17 +6,19 @@ import javax.swing.*;
 
 public class BoxCollider {
     public Vector2D masterPosition; //master == gameObject
+    public Vector2D masterAnchor;
     public int width;
     public int height;
 
-    public BoxCollider(Vector2D masterPosition, int width, int height) {
+    public BoxCollider(Vector2D masterAnchor, Vector2D masterPosition, int width, int height) {
         this.masterPosition = masterPosition;
+        this.masterAnchor = masterAnchor;
         this.width = width;
         this.height = height;
     }
 
     public int top() {
-        return (int)this.masterPosition.y;
+        return (int)(this.masterPosition.y - this.masterAnchor.y * height);
     }
 
     public int bottom() {
@@ -24,7 +26,7 @@ public class BoxCollider {
     }
 
     public int left() {
-        return (int)this.masterPosition.x;
+        return (int)(this.masterPosition.x - this.masterAnchor.x * width);
     }
 
     public int right() {

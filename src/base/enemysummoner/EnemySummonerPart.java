@@ -13,7 +13,7 @@ public class EnemySummonerPart extends GameObject implements Physics {
     Action action;
 
     public EnemySummonerPart() {
-        this.boxCollider = new BoxCollider(this.position
+        this.boxCollider = new BoxCollider(this.anchor,this.position
                 , 40, 100);
         this.renderer = new BoxRenderer(this.boxCollider
                 , Color.WHITE, true);

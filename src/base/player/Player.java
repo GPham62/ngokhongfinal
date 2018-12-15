@@ -39,7 +39,7 @@ public class Player extends GameObject implements Physics {
         this.hp = 1;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
-        this.boxCollider = new BoxCollider(this.position, 32, 48);
+        this.boxCollider = new BoxCollider(this.anchor,this.position, 32, 48);
         this.angle = 0;
     }
 

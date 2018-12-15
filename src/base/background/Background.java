@@ -23,7 +23,7 @@ public class Background extends GameObject implements Physics {
 
     public Background() {
         this.createParts();
-        this.boxCollider = new BoxCollider(this.position, width * 2, height * 2);
+        this.boxCollider = new BoxCollider(this.anchor,this.position, width * 2, height * 2);
         this.renderer = new BoxRenderer(this.boxCollider, Color.green, false);
         this.position.set((int)Settings.SCREEN_WIDTH / 2, (int)Settings.SCREEN_HEIGHT / 2);
         this.speed = 10;

@@ -12,7 +12,7 @@ public class Peach extends Item {
 
     public Peach() {
         super();
-        this.boxCollider = new BoxCollider(this.position, 18, 20);
+        this.boxCollider = new BoxCollider(this.anchor,this.position, 18, 20);
         this.position.set(200, 300);
         this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/items/peach.png"));
     }
