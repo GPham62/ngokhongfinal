@@ -2,12 +2,8 @@ package base.player;
 
 import base.FrameCounter;
 import base.GameObject;
-import base.Score;
-import base.Vector2D;
 import base.action.Action;
 import base.enemy.EnemyExplosion;
-import base.events.KeyEventPress;
-import base.events.MouseEventMotion;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
@@ -16,8 +12,6 @@ import base.scene.GameOverScene;
 import base.scene.SceneManager;
 import tklibs.SpriteUtils;
 
-import java.awt.*;
-import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
@@ -28,6 +22,7 @@ public class Player extends GameObject implements Physics {
     boolean immune;
     FrameCounter immuneCouter;
     BoxCollider boxCollider;
+    FrameCounter smokeCounter;
 
     public Player() {
         super();
@@ -41,6 +36,7 @@ public class Player extends GameObject implements Physics {
         this.immune = false;
         this.boxCollider = new BoxCollider(this.anchor,this.position, 32, 48);
         this.angle = 0;
+        this.smokeCounter = new FrameCounter(10);
     }
 
     private void createRenderer() {
@@ -92,8 +88,16 @@ public class Player extends GameObject implements Physics {
     public void run() {
         this.move(); //change velocity
         super.run(); //this.position.addThis(this.velocity)
+        this.createSmoke();
     }
 
+    private void createSmoke() {
+        if (this.smokeCounter.run()){
+            SmokeEffect smokeEffect = GameObject.recycle(SmokeEffect.class);
+            smokeEffect.position.set(this.position);
+            this.smokeCounter.reset();
+        }
+    }
 
 
     private void move() {
