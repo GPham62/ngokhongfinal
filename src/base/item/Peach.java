@@ -22,7 +22,7 @@ public class Peach extends Item {
 
         randomPosition();
 
-        this.boxCollider = new BoxCollider(this.anchor, this.position, 18, 20);
+        this.boxCollider = new BoxCollider(this.anchor, this.position, 45, 45);
         this.speed = 10;
         this.position.set(randomX, randomY);
         this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/items/peach.png"));
