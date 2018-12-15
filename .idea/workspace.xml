@@ -2,61 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6747fd44-a49d-48d5-a9cc-258bff55a581" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/Program.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/CoverGameOverScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/CoverMenuScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/FrameCounter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/GameObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/Score.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/Vector2D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/action/Action.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/action/ActionParallel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/action/ActionRepeat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/action/ActionSequence.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/action/ActionSummonEnemy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/action/ActionWait.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/background/Background.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/background/BackgroundPart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/enemy/EnemyBullet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/enemy/EnemyExplosion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/enemy/EnemyHomingBullet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/enemysummoner/EnemySummoner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/enemysummoner/EnemySummonerPart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/events/KeyEventPress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/events/MouseEventMotion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/game/GameCanvas.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/game/GameWindow$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/game/GameWindow$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/game/GameWindow.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/game/Settings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/item/HoLo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/item/Item.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/item/ItemSummoner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/item/Peach.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/physics/BoxCollider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/physics/Physics.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/player/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/renderer/AnimationRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/renderer/BoxRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/renderer/Renderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/renderer/RotateRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/renderer/SingleImageRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/renderer/TextRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/scene/GameOverScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/scene/MenuScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/scene/Scene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/scene/SceneManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/base/scene/SceneStage1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/tklibs/AudioUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/tklibs/Mathx.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/wukong-master/tklibs/SpriteUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/player/SmokeEffect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/renderer/SmokeRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wukong-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/Smoke.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/punch.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/punch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wukong-master/base/enemy/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong-master/base/enemy/EnemyBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wukong-master/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong-master/base/player/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,66 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Program.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/base/player/SmokeEffect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-              <folding>
-                <element signature="e#2721#2722#0" expanded="true" />
-                <element signature="e#2757#2758#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/renderer/SmokeRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/images/smoke/circle.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
-              <folding>
-                <element signature="e#3763#3764#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -134,17 +30,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyHomingBullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="1075">
               <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/renderer/SingleImageRenderer.java">
+        <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyBullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="75">
+              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/player/SmokeEffect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/item/HoLo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-125">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/scene/SceneStage1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/item/Peach.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-50">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -164,77 +108,114 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" />
         <option value="$PROJECT_DIR$/src/base/renderer/SingleImageRenderer.java" />
-        <option value="$PROJECT_DIR$/src/base/player/Player.java" />
         <option value="$PROJECT_DIR$/src/base/renderer/SmokeRenderer.java" />
         <option value="$PROJECT_DIR$/src/base/player/SmokeEffect.java" />
+        <option value="$PROJECT_DIR$/src/base/player/Player.java" />
+        <option value="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1024" />
-    <option name="height" value="688" />
+    <option name="x" value="-9" />
+    <option name="width" value="1025" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="smoke" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="enemies" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="enemies" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bullets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="enemies" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="level0" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="wukong-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wukong-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="enemy" type="462c0819:PsiDirectoryNode" />
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="enemy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="item" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="player" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wukong - backup 3.0" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wukong-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scene" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544891102349" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544894247486" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,40 +254,53 @@
       <option name="presentableId" value="Default" />
       <updated>1544886151638</updated>
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1544892417235</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544892417235</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ạ" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/base/renderer/RotateRenderer.java">
@@ -330,39 +324,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyHomingBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/smoke/circle.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
-          <folding>
-            <element signature="e#3763#3764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/FrameCounter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -396,13 +359,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/item/Peach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/item/HoLo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/scene/SceneStage1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/players/straight/0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/players/straight/c0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyHomingBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/player/SmokeEffect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="162">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
         </state>
       </provider>
     </entry>
