@@ -8,6 +8,8 @@ import base.renderer.SingleImageRenderer;
 import base.renderer.TextRenderer;
 import tklibs.SpriteUtils;
 
+import java.awt.*;
+
 public class Score extends GameObject {
     int value;
     FrameCounter increaseCounter;
@@ -53,5 +55,13 @@ public class Score extends GameObject {
         this.value = 0;
         super.reset();
         this.isGameOver = true;
+    }
+
+    @Override
+    public void render(Graphics g) {
+        g.setFont(new Font(null,Font.BOLD,30));
+        g.setColor(Color.MAGENTA);
+        super.render(g);
+
     }
 }

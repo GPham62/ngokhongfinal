@@ -2,8 +2,10 @@ package base.player;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.Vector2D;
 import base.action.Action;
 import base.enemy.EnemyExplosion;
+import base.events.MouseEventMotion;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
@@ -92,9 +94,11 @@ public class Player extends GameObject implements Physics {
     }
 
     private void createSmoke() {
+        Vector2D toMouse = MouseEventMotion.getVectorFromCentorToMouse();
+        toMouse.setLength(50).scaleThis(-1);
         if (this.smokeCounter.run()){
             SmokeEffect smokeEffect = GameObject.recycle(SmokeEffect.class);
-            smokeEffect.position.set(this.position);
+            smokeEffect.position.set(this.position).addThis(toMouse);
             this.smokeCounter.reset();
         }
     }
