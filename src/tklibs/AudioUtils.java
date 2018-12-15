@@ -3,6 +3,9 @@ package tklibs;
 //import javafx.scene.media.Media;
 //import javafx.scene.media.MediaPlayer;
 
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
@@ -53,10 +56,10 @@ public class AudioUtils {
      * @param audioUrl
      * @return
      */
-//    public static MediaPlayer playMedia(String audioUrl) {
-//        String uriString = new File(audioUrl).toURI().toString();
-//        MediaPlayer mediaPlayer = new MediaPlayer(new Media(uriString));
-//        mediaPlayer.play();
-//        return mediaPlayer;
-//    }
+    public static MediaPlayer playMedia(String audioUrl) {
+        String uriString = new File(audioUrl).toURI().toString();
+        MediaPlayer mediaPlayer = new MediaPlayer(new Media(uriString));
+        mediaPlayer.play();
+        return mediaPlayer;
+    }
 }

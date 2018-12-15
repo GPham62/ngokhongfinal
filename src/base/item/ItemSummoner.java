@@ -4,6 +4,8 @@ import base.FrameCounter;
 import base.GameObject;
 import base.enemy.EnemyHomingBullet;
 
+import java.util.Random;
+
 public class ItemSummoner extends GameObject {
     FrameCounter durationNew;
     public ItemSummoner(){
@@ -23,8 +25,24 @@ public class ItemSummoner extends GameObject {
         }
         if (item == null) {
             if (this.durationNew.run()) {
-                Peach p = GameObject.recycle(Peach.class);
-                this.durationNew.reset();
+                Random random = new Random();
+                int randomItem = random.nextInt(2);
+                switch (randomItem){
+                    case 0:{
+                        Peach peach = GameObject.recycle(Peach.class);
+                        this.durationNew.reset();
+                        break;
+                    }
+                    case 1: {
+                        HoLo hoLo = GameObject.recycle(HoLo.class);
+                        this.durationNew.reset();
+                        break;
+                    }
+                    default:{
+                        break;
+                    }
+                }
+
             }
         }
     }
