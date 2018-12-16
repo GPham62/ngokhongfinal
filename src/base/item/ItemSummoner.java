@@ -10,7 +10,7 @@ public class ItemSummoner extends GameObject {
     FrameCounter durationNew;
     public ItemSummoner(){
         super();
-        this.durationNew = new FrameCounter(10);
+        this.durationNew = new FrameCounter(100);
     }
 
     @Override

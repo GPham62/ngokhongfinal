@@ -2,6 +2,7 @@ package base.item;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.Score;
 import base.Vector2D;
 import base.events.MouseEventMotion;
 import base.game.Settings;
@@ -22,13 +23,10 @@ public class Item extends GameObject implements Physics {
 
     public Item() {
         super();
-        this.sound = AudioUtils.loadSound("assets/music/sfx/laugh.wav");
-        rd = new Random();
-        randomX = rd.nextInt(200) + Settings.SCREEN_WIDTH / 2 + 200;
-        randomY = rd.nextInt(200) + Settings.SCREEN_HEIGHT / 2 + 200;
-        this.position.set(randomX, randomY);
+        this.randomPosition();
         this.speed = 10;
-        this.durationItem = new FrameCounter(3000);
+        this.durationItem = new FrameCounter(300);
+        this.sound = AudioUtils.loadSound("assets/music/sfx/powerup.wav");
     }
 
     public void hitPlayer() {
@@ -38,10 +36,12 @@ public class Item extends GameObject implements Physics {
                 player = (Player) gameObject;
         }
         if (player != null && this.getBoxCollider().intersects(player.getBoxCollider())){
-            this.destroy();
             this.sound.setFramePosition(0);
             this.sound.start();
+            this.destroy();
+            Score.value += 100;
         }
+
     }
     @Override
     public void run() {
@@ -67,6 +67,30 @@ public class Item extends GameObject implements Physics {
         }
     }
 
+    private void randomPosition() {
+        rd = new Random();
+        int i = rd.nextInt(2);
+        switch (i) {
+            default: break;
+            case 0: {
+                i = 1;
+                break;
+            }
+            case 1: {
+                i = -1;
+                break;
+            }
+        }
+        randomX =  i * (rd.nextInt(400) + 100 ) + Settings.SCREEN_WIDTH / 2 ;
+        randomY =  i * (rd.nextInt(400) + 100 ) + Settings.SCREEN_HEIGHT / 2 ;
+        this.position.set(randomX, randomY);
+    }
+
+    @Override
+    public void reset() {
+        super.reset();
+        this.randomPosition();
+    }
 
     @Override
     public BoxCollider getBoxCollider() {

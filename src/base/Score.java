@@ -11,7 +11,7 @@ import tklibs.SpriteUtils;
 import java.awt.*;
 
 public class Score extends GameObject {
-    int value;
+    public static int value;
     FrameCounter increaseCounter;
     boolean isGameOver;
     public Score(){

@@ -22,9 +22,9 @@ public class EnemyBullet extends GameObject implements Physics {
     int damage;
     Clip sound;
 
+
     public EnemyBullet() {
         super();
-        this.sound = AudioUtils.loadSound("assets/music/sfx/enemy-explosion.wav");
         this.boxCollider = new BoxCollider(this.anchor,this.position
                 , 16, 16);
 //-----
@@ -33,6 +33,7 @@ public class EnemyBullet extends GameObject implements Physics {
 //                , Color.green, true);
         this.damage = 1;
         this.speed = 10;
+        this.sound = AudioUtils.loadSound("assets/music/sfx/enemy-explosion.wav");
     }
 
     private void createRenderer() {
@@ -70,7 +71,11 @@ public class EnemyBullet extends GameObject implements Physics {
             this.destroy();
             this.sound.setFramePosition(0);
             this.sound.start();
-            explosion.velocity.set(toMouse.scaleThis(-1).setLength(speed));
+            if (toMouse.length()>10) {
+                explosion.velocity.set(toMouse.scaleThis(-1).setLength(speed));
+            } else {
+                explosion.velocity.set(0,0);
+            }
         }
     }
 
