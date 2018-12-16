@@ -6,12 +6,17 @@ import base.Vector2D;
 import base.events.MouseEventMotion;
 import base.physics.Physics;
 import base.player.Player;
+import tklibs.AudioUtils;
+
+import javax.sound.sampled.Clip;
 
 public class EnemyHomingBullet extends EnemyBullet implements Physics {
     public static boolean hitEachOther;
+    Clip sound;
 
     public EnemyHomingBullet(){
         super();
+        this.sound = AudioUtils.loadSound("assets/music/sfx/enemy-explosion.wav");
         this.hitEachOther = false;
 
 
@@ -32,8 +37,10 @@ public class EnemyHomingBullet extends EnemyBullet implements Physics {
             EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
             enemyHomingBullet.destroy();
             this.destroy();
+            this.sound.setFramePosition(0);
+            this.sound.start();
             explosion.position.set(enemyHomingBullet.position);
-            explosion.velocity.set(toMouse.scaleThis(-1).setLength(10));
+            explosion.velocity.set(toMouse.scaleThis(-1).setLength(speed));
         }
     }
 

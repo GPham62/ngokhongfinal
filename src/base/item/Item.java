@@ -8,7 +8,9 @@ import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.player.Player;
+import tklibs.AudioUtils;
 
+import javax.sound.sampled.Clip;
 import java.util.Random;
 
 public class Item extends GameObject implements Physics {
@@ -16,9 +18,14 @@ public class Item extends GameObject implements Physics {
     int randomX, randomY;
     Random rd;
     FrameCounter durationItem;
+    Clip sound;
 
     public Item() {
         super();
+        this.sound = AudioUtils.loadSound("assets/music/sfx/laugh.wav");
+        rd = new Random();
+        randomX = rd.nextInt(200) + Settings.SCREEN_WIDTH / 2 + 200;
+        randomY = rd.nextInt(200) + Settings.SCREEN_HEIGHT / 2 + 200;
         this.position.set(randomX, randomY);
         this.speed = 10;
         this.durationItem = new FrameCounter(3000);
@@ -32,6 +39,8 @@ public class Item extends GameObject implements Physics {
         }
         if (player != null && this.getBoxCollider().intersects(player.getBoxCollider())){
             this.destroy();
+            this.sound.setFramePosition(0);
+            this.sound.start();
         }
     }
     @Override
@@ -39,7 +48,6 @@ public class Item extends GameObject implements Physics {
         super.run();
         this.move();
         this.hitPlayer();
-        this.randomPosition();
         this.destroyAfterDuration();
     }
 
@@ -59,11 +67,6 @@ public class Item extends GameObject implements Physics {
         }
     }
 
-    private void randomPosition() {
-        rd = new Random();
-        randomX = rd.nextInt(100) + Settings.SCREEN_WIDTH / 2 + 100;
-        randomY = rd.nextInt(100) + Settings.SCREEN_HEIGHT / 2 + 100;
-    }
 
     @Override
     public BoxCollider getBoxCollider() {

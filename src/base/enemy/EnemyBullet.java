@@ -9,8 +9,10 @@ import base.physics.Physics;
 import base.player.Player;
 import base.renderer.BoxRenderer;
 import base.renderer.RotateRenderer;
+import tklibs.AudioUtils;
 import tklibs.SpriteUtils;
 
+import javax.sound.sampled.Clip;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -18,9 +20,11 @@ import java.util.ArrayList;
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
     int damage;
+    Clip sound;
 
     public EnemyBullet() {
         super();
+        this.sound = AudioUtils.loadSound("assets/music/sfx/enemy-explosion.wav");
         this.boxCollider = new BoxCollider(this.anchor,this.position
                 , 16, 16);
 //-----
@@ -64,7 +68,9 @@ public class EnemyBullet extends GameObject implements Physics {
             EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
             explosion.position.set(this.position);
             this.destroy();
-            explosion.velocity.set(toMouse.scaleThis(-1).setLength(10));
+            this.sound.setFramePosition(0);
+            this.sound.start();
+            explosion.velocity.set(toMouse.scaleThis(-1).setLength(speed));
         }
     }
 

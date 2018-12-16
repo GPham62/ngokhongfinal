@@ -14,7 +14,6 @@ import tklibs.SpriteUtils;
 import java.util.Random;
 
 public class Peach extends Item {
-
     public Peach() {
         super();
         this.boxCollider = new BoxCollider(this.anchor, this.position, 45, 45);

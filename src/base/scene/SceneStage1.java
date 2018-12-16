@@ -26,7 +26,7 @@ public class SceneStage1 extends Scene {
         this.enemySummoner = GameObject.recycle(EnemySummoner.class);
         this.score = GameObject.recycle(Score.class);
         this.itemSummoner = GameObject.recycle(ItemSummoner.class);
-        this.itemGuide = GameObject.recycle(ItemGuide.class);
+        //this.itemGuide = GameObject.recycle(ItemGuide.class);
     }
 
     @Override

@@ -12,12 +12,15 @@ import base.physics.Physics;
 import base.renderer.*;
 import base.scene.overscene.GameOverScene;
 import base.scene.SceneManager;
+import tklibs.AudioUtils;
 import tklibs.SpriteUtils;
 
+import javax.sound.sampled.Clip;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public class Player extends GameObject implements Physics {
+    Clip sound;
     double angle;
     Action action;
     int hp;
@@ -33,12 +36,13 @@ public class Player extends GameObject implements Physics {
 //        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
-        this.hp = 999;
+        this.hp = 1;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.anchor,this.position, 60, 80);
         this.angle = 0;
         this.smokeCounter = new FrameCounter(10);
+        this.sound = AudioUtils.loadSound("assets/music/sfx/player-dead.wav");
     }
 
     private void createRenderer() {
@@ -73,6 +77,8 @@ public class Player extends GameObject implements Physics {
         EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
         explosion.position.set(this.position);
         if (this.hp == 0) {
+            this.sound.setFramePosition(0);
+            this.sound.start();
             SceneManager.signNewScene(new GameOverScene());
         }
     }
