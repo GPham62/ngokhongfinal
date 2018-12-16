@@ -3,28 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba8d7a32-13f3-41e9-aaa6-a8bf4526f10f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/enemy/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/enemy/EnemyBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/enemy/EnemyHomingBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/enemy/EnemyHomingBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/game/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/game/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/item/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/item/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/item/Peach.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/item/Peach.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/scene/Scene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/scene/SceneStage1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/scene/SceneStage1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/scene/menuscene/MenuScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/scene/menuscene/MenuScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/EnemyHomingBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyHomingBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/item/Peach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/Peach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/SceneStage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/SceneStage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/menuscene/MenuScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/menuscene/MenuScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/overscene/GameOverScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/overscene/GameOverScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/overscene/HighScore.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+            <state relative-caret-position="245">
+              <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -261,7 +239,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544945821357" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544945986327" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jdk-11.0.1_windows-x64_bin/javafx-sdk-11.0.1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -375,14 +353,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544913944367</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update sound">
+      <created>1544945879318</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544945879318</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -392,7 +377,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -446,7 +431,8 @@
     <MESSAGE value="text" />
     <MESSAGE value="game menu" />
     <MESSAGE value="fix smoke" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix smoke" />
+    <MESSAGE value="update sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sound" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/images/background/1920x1080.png" />
@@ -719,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+        <state relative-caret-position="245">
+          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
         </state>
       </provider>
     </entry>
