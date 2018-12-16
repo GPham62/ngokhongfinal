@@ -11,7 +11,7 @@ public class MenuScene extends Scene {
     public void init() {
         BackgroundMenuScene backgroundMenuScene = GameObject.recycle(BackgroundMenuScene.class);
         TextMenuScene textMenuScene = GameObject.recycle(TextMenuScene.class);
-        CoverMenuScene cover = GameObject.recycle(CoverMenuScene.class);
+        //CoverMenuScene cover = GameObject.recycle(CoverMenuScene.class);
         this.sound = AudioUtils.loadSound("assets/music/bgm/openingSound.wav");
         this.sound.setFramePosition(0);
         this.sound.start();

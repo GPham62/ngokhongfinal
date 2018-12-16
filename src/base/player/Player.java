@@ -31,6 +31,7 @@ public class Player extends GameObject implements Physics {
     BoxCollider boxCollider;
     FrameCounter smokeCounter;
 
+
     public Player() {
         super();
 //        this.createRenderer();
@@ -45,6 +46,7 @@ public class Player extends GameObject implements Physics {
         this.angle = 0;
         this.smokeCounter = new FrameCounter(10);
         this.sound = AudioUtils.loadSound("assets/music/sfx/player-dead.wav");
+
     }
 
     private void createRenderer() {
@@ -78,11 +80,10 @@ public class Player extends GameObject implements Physics {
         super.destroy();
         EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
         explosion.position.set(this.position);
-        if (this.hp == 0) {
-            this.sound.setFramePosition(0);
-            this.sound.start();
-            SceneManager.signNewScene(new GameOverScene());
-        }
+
+        this.sound.setFramePosition(0);
+        this.sound.start();
+        SceneManager.signNewScene(new GameOverScene());
     }
 
     @Override

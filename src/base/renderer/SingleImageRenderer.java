@@ -17,6 +17,22 @@ public class SingleImageRenderer extends Renderer {
         this.image = image;
     }
 
+    public SingleImageRenderer(Image img){
+        if (img instanceof BufferedImage)
+        {
+            this.image = (BufferedImage)img;
+        }
+
+        // Create a buffered image with transparency
+        BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+
+        // Draw the image on to the buffered image
+        Graphics2D bGr = bimage.createGraphics();
+        bGr.drawImage(img, 0, 0, null);
+        bGr.dispose();
+        this.image = bimage;
+    }
+
     @Override
     public void render(Graphics g, GameObject master) {
         int x = (int)(master.position.x
