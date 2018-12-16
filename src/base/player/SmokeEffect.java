@@ -11,7 +11,7 @@ public class SmokeEffect extends GameObject {
     public SmokeEffect(){
         super();
         this.frameCounter = new FrameCounter(1);
-        this.renderer = new SmokeRenderer("assets/images/smoke/blue.png");
+        this.renderer = new SmokeRenderer("assets/images/smoke/cloud.png");
     }
 
     @Override

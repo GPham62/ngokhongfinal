@@ -1,5 +1,7 @@
 package base.game;
 
+import base.Score;
+
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
@@ -21,4 +23,5 @@ public class Settings {
     public final static int BOT = 1;
     public final static int LEFT = 2;
     public final static int RIGHT = 3;
+    public static int HIGHSCORE = Score.value;
 }

@@ -7,15 +7,19 @@ import base.renderer.AnimationRenderer;
 import base.renderer.SingleImageRenderer;
 import base.scene.SceneManager;
 import base.scene.SceneStage1;
+import tklibs.AudioUtils;
 import tklibs.SpriteUtils;
 
+import javax.sound.sampled.Clip;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public class CoverMenuScene extends GameObject {
+    Clip sound;
     public CoverMenuScene() {
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
+
     }
 
     private void createRenderer() {

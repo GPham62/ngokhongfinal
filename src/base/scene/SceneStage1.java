@@ -9,6 +9,7 @@ import base.item.ItemSummoner;
 import base.item.Peach;
 import base.physics.BoxCollider;
 import base.player.Player;
+import tklibs.AudioUtils;
 
 public class SceneStage1 extends Scene {
     public GameObject background;
@@ -26,11 +27,15 @@ public class SceneStage1 extends Scene {
         this.enemySummoner = GameObject.recycle(EnemySummoner.class);
         this.score = GameObject.recycle(Score.class);
         this.itemSummoner = GameObject.recycle(ItemSummoner.class);
+        this.sound = AudioUtils.loadSound("assets/music/bgm/gameplay.wav");
+        this.sound.setFramePosition(0);
+        this.sound.start();
         //this.itemGuide = GameObject.recycle(ItemGuide.class);
     }
 
     @Override
     public void clear() {
+        super.clear();
         GameObject.clearAll();
     }
 }

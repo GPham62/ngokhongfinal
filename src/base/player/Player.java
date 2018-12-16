@@ -2,6 +2,7 @@ package base.player;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.Score;
 import base.Vector2D;
 import base.action.Action;
 import base.enemy.EnemyExplosion;
@@ -12,6 +13,7 @@ import base.physics.Physics;
 import base.renderer.*;
 import base.scene.overscene.GameOverScene;
 import base.scene.SceneManager;
+import base.scene.overscene.GameOverScore;
 import tklibs.AudioUtils;
 import tklibs.SpriteUtils;
 

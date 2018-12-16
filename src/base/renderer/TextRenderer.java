@@ -11,8 +11,14 @@ public class TextRenderer extends Renderer {
         this.text = text;
     }
 
+    public void drawString(Graphics g, String text, int x, int y){
+        for (String line : text.split("/n")){
+            g.drawString(line, x, y += g.getFontMetrics().getHeight());
+        }
+    }
+
     @Override
     public void render(Graphics g, GameObject master) {
-        g.drawString(this.text, (int)master.position.x, (int)master.position.y);
+        drawString(g, this.text, (int)master.position.x, (int)master.position.y);
     }
 }

@@ -52,7 +52,6 @@ public class Score extends GameObject {
 
     @Override
     public void reset() {
-        this.value = 0;
         super.reset();
         this.isGameOver = true;
     }
