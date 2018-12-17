@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f1fa7a8-8d43-44a4-a52a-276e65d4d1ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/background/textMenu.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/background/textMenu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/hand-red.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/hand-red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/players/straight/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/players/straight/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/players/straight/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/players/straight/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/FrameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/FrameCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/background/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/background/Background.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/enemy/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/enemy/EnemyBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/item/HoLo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/item/HoLo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/item/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/item/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/item/Peach.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/item/Peach.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/scene/menuscene/BackgroundMenuScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/scene/menuscene/BackgroundMenuScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/FrameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/FrameCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/background/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/background/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/item/HoLo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/HoLo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/item/Peach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/Peach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/menuscene/BackgroundMenuScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/menuscene/BackgroundMenuScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/scene/overscene/CoverGameOverScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/overscene/CoverGameOverScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wukong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wukong.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base/scene/menuscene/CoverMenuScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="200">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -256,7 +228,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545048633779" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545048899975" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,10 +267,18 @@
       <option name="presentableId" value="Default" />
       <updated>1545047693632</updated>
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1545048664970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545048664970</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -329,6 +309,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
@@ -417,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/scene/menuscene/CoverMenuScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="200">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>
