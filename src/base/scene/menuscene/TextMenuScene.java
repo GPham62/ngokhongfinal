@@ -10,6 +10,6 @@ import java.awt.*;
 public class TextMenuScene extends GameObject {
     public TextMenuScene(){
         this.renderer = new SingleImageRenderer("assets/images/background/textMenu.png");
-        this.position.set(Settings.SCREEN_WIDTH/2, 200);
+        this.position.set(Settings.SCREEN_WIDTH/2, 50);
     }
 }
