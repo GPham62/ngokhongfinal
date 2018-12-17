@@ -19,7 +19,7 @@ public class Background extends GameObject implements Physics {
 
     int width = 2000;
     int height = 1125;
-    int speed;
+    public static int speed;
 
     public Background() {
         this.createParts();

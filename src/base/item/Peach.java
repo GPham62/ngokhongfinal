@@ -18,5 +18,6 @@ public class Peach extends Item {
         super();
         this.boxCollider = new BoxCollider(this.anchor, this.position, 45, 45);
         this.renderer = new SingleImageRenderer(SpriteUtils.loadImage("assets/images/items/peach.png"));
+        this.addScore = 20;
     }
 }

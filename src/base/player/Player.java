@@ -39,10 +39,10 @@ public class Player extends GameObject implements Physics {
 //        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
-        this.hp = 3;
+        this.hp = 1;
         this.immuneCouter = new FrameCounter(30);
         this.immune = false;
-        this.boxCollider = new BoxCollider(this.anchor,this.position, 60, 80);
+        this.boxCollider = new BoxCollider(this.anchor,this.position, 48, 110);
         this.angle = 0;
         this.smokeCounter = new FrameCounter(10);
         this.sound = AudioUtils.loadSound("assets/music/sfx/player-dead.wav");
@@ -51,14 +51,9 @@ public class Player extends GameObject implements Physics {
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-        images.add(SpriteUtils.loadImage("assets/images/players/straight/c0.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/5.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/6.png"));
-        this.renderer = new RotateRenderer(images, 10);
+        images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
+        images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
+        this.renderer = new RotateRenderer(images, 300);
     }
 
     public void takeDamage(int damage) {

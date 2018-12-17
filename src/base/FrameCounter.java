@@ -9,6 +9,8 @@ public class FrameCounter {
         this.count = 0;
     }
 
+
+
     public boolean run() {
         //true ~ count done
         //false ~ not yet done

@@ -20,6 +20,7 @@ public class Item extends GameObject implements Physics {
     Random rd;
     FrameCounter durationItem;
     Clip sound;
+    int addScore;
 
     public Item() {
         super();
@@ -27,6 +28,7 @@ public class Item extends GameObject implements Physics {
         this.speed = 10;
         this.durationItem = new FrameCounter(300);
         this.sound = AudioUtils.loadSound("assets/music/sfx/powerup.wav");
+
     }
 
     public void hitPlayer() {
@@ -39,7 +41,7 @@ public class Item extends GameObject implements Physics {
             this.sound.setFramePosition(0);
             this.sound.start();
             this.destroy();
-            Score.value += 100;
+            Score.value += this.addScore;
         }
 
     }

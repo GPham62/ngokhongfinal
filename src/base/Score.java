@@ -42,7 +42,7 @@ public class Score extends GameObject {
             }
 
             if (player.isActive && EnemyHomingBullet.hitEachOther) {
-                this.value += 10;
+                this.value += 5;
                 EnemyHomingBullet.hitEachOther = false;
             }
         }

@@ -14,6 +14,7 @@ public class HoLo extends Item {
         super();
         this.boxCollider = new BoxCollider(this.anchor,this.position, 45, 45);
         this.createRenderer();
+        this.addScore = 50;
     }
 
     private void createRenderer() {

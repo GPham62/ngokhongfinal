@@ -38,19 +38,9 @@ public class EnemyBullet extends GameObject implements Physics {
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-//        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/hand-red.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/punch.png"));
-        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/PUNCH1.png"));
-        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/PUNCH2.png"));
-        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/PUNCH3.png"));
-        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/PUNCH4.png"));
-        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/PUNCH5.png"));
-        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/PUNCH6.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/3.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/4.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/5.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/players/straight/6.png"));
-        this.renderer = new RotateRenderer(images, 20);
+        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/2.png"));
+        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/1.png"));
+        this.renderer = new RotateRenderer(images, 80);
     }
 //    private void move(){
 //        Vector2D toMouse = MouseEventMotion.getVectorFromCentorToMouse();
