@@ -22,6 +22,12 @@ public class GameWindow extends JFrame {
     }
 
     private void addMouseEvent() {
+        this.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                KeyEventPress.isClicked = true;
+            }
+        });
         this.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {

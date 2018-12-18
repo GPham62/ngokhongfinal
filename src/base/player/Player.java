@@ -6,6 +6,7 @@ import base.Score;
 import base.Vector2D;
 import base.action.Action;
 import base.enemy.EnemyExplosion;
+import base.events.KeyEventPress;
 import base.events.MouseEventMotion;
 import base.game.Settings;
 import base.physics.BoxCollider;
@@ -64,6 +65,7 @@ public class Player extends GameObject implements Physics {
         if(this.hp <= 0) {
             this.hp = 0;
             this.destroy();
+            KeyEventPress.isClicked = false;
         }
         else {
             this.immune = true;
@@ -118,7 +120,7 @@ public class Player extends GameObject implements Physics {
             if (this.immuneCouter.run()) {
                 this.immune = false;
             }
-            if (this.immuneCouter.count % 15 == 0) {
+            if (this.immuneCouter.count % 10 == 0) {
                     super.render(g);
             }
         }

@@ -22,7 +22,7 @@ public class BackgroundMenuScene extends GameObject {
     @Override
     public void run() {
         super.run();
-        if (KeyEventPress.isAnyKeyPress) {
+        if (KeyEventPress.isAnyKeyPress || KeyEventPress.isClicked) {
             SceneManager.signNewScene(new SceneStage1());
         }
     }
