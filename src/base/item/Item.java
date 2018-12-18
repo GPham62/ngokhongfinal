@@ -22,6 +22,7 @@ public class Item extends GameObject implements Physics {
     Clip sound;
     int addScore;
 
+
     public Item() {
         super();
         this.randomPosition();
@@ -42,6 +43,9 @@ public class Item extends GameObject implements Physics {
             this.sound.start();
             this.destroy();
             Score.value += this.addScore;
+            if (this instanceof HoLo){
+                player.immune = true;
+            }
         }
 
     }

@@ -26,10 +26,10 @@ public class Player extends GameObject implements Physics {
     double angle;
     Action action;
     int hp;
-    boolean immune;
-    FrameCounter immuneCouter;
+    public boolean immune;
     BoxCollider boxCollider;
     FrameCounter smokeCounter;
+    int immuneCount;
 
 
     public Player() {
@@ -40,10 +40,10 @@ public class Player extends GameObject implements Physics {
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
         this.hp = 1;
-        this.immuneCouter = new FrameCounter(30);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.anchor,this.position, 48, 110);
         this.angle = 0;
+        this.immuneCount = 0;
         this.smokeCounter = new FrameCounter(10);
         this.sound = AudioUtils.loadSound("assets/music/sfx/player-dead.wav");
 
@@ -57,17 +57,20 @@ public class Player extends GameObject implements Physics {
     }
 
     public void takeDamage(int damage) {
-//        if(this.immune)
-//            return;
+        if(this.immune && this.immuneCount < 20){
+            immuneCount ++;
+            return;
+        }
+        else{
+            this.immuneCount = 0;
+            this.immune = false;
+            this.hp -= damage;
+        }
         this.hp -= damage;
         if(this.hp <= 0) {
             this.hp = 0;
             this.destroy();
         }
-//        else {
-//            this.immune = true;
-//            this.immuneCouter.reset();
-//        }
     }
 
     @Override
@@ -86,8 +89,8 @@ public class Player extends GameObject implements Physics {
         super.reset();
         this.velocity.set(3, 0);
         this.immune = false;
-        this.immuneCouter.reset();
         this.hp = 3;
+        this.immuneCount = 0;
     }
 
     @Override
