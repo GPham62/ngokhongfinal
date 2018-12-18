@@ -27,7 +27,6 @@ public class ItemSummoner extends GameObject {
             if (this.durationNew.run()) {
                 Random random = new Random();
                 int randomItem = random.nextInt(2);
-                randomItem = 1;
                 switch (randomItem){
                     case 0:{
                         Peach peach = GameObject.recycle(Peach.class);
