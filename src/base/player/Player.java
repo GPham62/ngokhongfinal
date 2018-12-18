@@ -18,6 +18,7 @@ import tklibs.AudioUtils;
 import tklibs.SpriteUtils;
 
 import javax.sound.sampled.Clip;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
@@ -27,9 +28,9 @@ public class Player extends GameObject implements Physics {
     Action action;
     int hp;
     public boolean immune;
+    public FrameCounter immuneCouter;
     BoxCollider boxCollider;
     FrameCounter smokeCounter;
-    int immuneCount;
 
 
     public Player() {
@@ -40,10 +41,10 @@ public class Player extends GameObject implements Physics {
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
         this.hp = 1;
+        this.immuneCouter = new FrameCounter(200);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.anchor,this.position, 48, 110);
         this.angle = 0;
-        this.immuneCount = 0;
         this.smokeCounter = new FrameCounter(10);
         this.sound = AudioUtils.loadSound("assets/music/sfx/player-dead.wav");
 
@@ -57,19 +58,16 @@ public class Player extends GameObject implements Physics {
     }
 
     public void takeDamage(int damage) {
-        if(this.immune && this.immuneCount < 20){
-            immuneCount ++;
+        if(this.immune)
             return;
-        }
-        else{
-            this.immuneCount = 0;
-            this.immune = false;
-            this.hp -= damage;
-        }
         this.hp -= damage;
         if(this.hp <= 0) {
             this.hp = 0;
             this.destroy();
+        }
+        else {
+            this.immune = true;
+            this.immuneCouter.reset();
         }
     }
 
@@ -89,8 +87,8 @@ public class Player extends GameObject implements Physics {
         super.reset();
         this.velocity.set(3, 0);
         this.immune = false;
+        this.immuneCouter.reset();
         this.hp = 3;
-        this.immuneCount = 0;
     }
 
     @Override
@@ -112,5 +110,19 @@ public class Player extends GameObject implements Physics {
     @Override
     public BoxCollider getBoxCollider() {
         return this.boxCollider;
+    }
+
+    @Override
+    public void render(Graphics g) {
+        if (this.immune){
+            if (this.immuneCouter.run()) {
+                this.immune = false;
+            }
+            if (this.immuneCouter.count % 15 == 0) {
+                    super.render(g);
+            }
+        }
+        else super.render(g);
+
     }
 }

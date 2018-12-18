@@ -44,6 +44,7 @@ public class Item extends GameObject implements Physics {
             this.destroy();
             Score.value += this.addScore;
             if (this instanceof HoLo){
+                player.immuneCouter.count = 0;
                 player.immune = true;
             }
         }

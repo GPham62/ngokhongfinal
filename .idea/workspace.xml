@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9f1fa7a8-8d43-44a4-a52a-276e65d4d1ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/enemysummoner/EnemySummonerPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/enemysummoner/EnemySummonerPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/item/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/item/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wukong/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wukong/base/player/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/base/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/item/ItemSummoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/item/ItemSummoner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/base/item/Item.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -29,9 +31,9 @@
         <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="60" column="27" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
               <folding>
-                <element signature="e#3405#3406#0" expanded="true" />
+                <element signature="e#3377#3378#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/item/ItemSummoner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -70,17 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tklibs/SpriteUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="250">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="1307" selection-start-line="1307" selection-end-line="1307" />
             </state>
           </provider>
         </entry>
@@ -136,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/base/scene/menuscene/TextMenuScene.java" />
         <option value="$PROJECT_DIR$/src/base/enemysummoner/EnemySummonerPart.java" />
         <option value="$PROJECT_DIR$/src/base/enemy/StraightBullet.java" />
+        <option value="$PROJECT_DIR$/src/base/item/ItemSummoner.java" />
         <option value="$PROJECT_DIR$/src/base/item/Item.java" />
         <option value="$PROJECT_DIR$/src/base/player/Player.java" />
       </list>
@@ -254,7 +248,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545113309432" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545114581190" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3.0ngokhongfinal-master/ngokhongfinal-master" />
   </component>
   <component name="RunDashboard">
@@ -322,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545069456788</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="an ho lo bat tu">
+      <created>1545113325413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545113325413</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -360,7 +361,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="an ho lo bat tu" />
+    <option name="LAST_COMMIT_MESSAGE" value="an ho lo bat tu" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/base/scene/menuscene/CoverMenuScene.java">
@@ -443,20 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tklibs/SpriteUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="1307" selection-start-line="1307" selection-end-line="1307" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/enemy/StraightBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -474,26 +462,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/item/ItemSummoner.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="128">
+          <caret line="1307" selection-start-line="1307" selection-end-line="1307" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tklibs/SpriteUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/item/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/item/ItemSummoner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="60" column="27" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
           <folding>
-            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
           </folding>
         </state>
       </provider>
